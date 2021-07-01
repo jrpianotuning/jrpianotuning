@@ -1,0 +1,267 @@
+@import "./variables.module.scss";
+
+/**************************
+	* Menubar shadow
+	***************************/
+
+div.navBar__shadow {
+	position: fixed;
+	width: 100vw;
+	height: $navbar_width;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 20px $black1_a5;
+}
+
+/**************************
+	* Styling for the menu
+	* button/bar
+	***************************/
+
+div.navBar__container {
+	position: fixed;
+	width: 100%;
+	height: $navbar_width;
+	top: 0;
+	display: flex;
+	align-items: center;
+	background: $black1;
+	z-index: 5;
+
+	label.navBar__button {
+		position: relative;
+		width: $navbar_width;
+		height: $navbar_width;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		span.navBar__bar__container {
+			position: absolute;
+			min-width: 3rem;
+			min-height: 2.7rem;
+
+			span.navBar__bar {
+				position: relative;
+				width: 3rem;
+				height: 0.4rem;
+				display: block;
+				background-color: $white1;
+				transition: all $bounce 200ms;
+				-webkit-transform-origin: left center;
+				-moz-transform-origin: left center;
+				-ms-transform-origin: left center;
+				-o-transform-origin: left center;
+				transform-origin: left center;
+			}
+		}
+	}
+}
+
+/**************************
+	* Styling for the navigation
+	* menu & components
+	***************************/
+
+div.navMenu__container {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background: $black1;
+	z-index: 2;
+	transition: left ease 200ms;
+
+	ul.navMenu__items {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin: $navbar_width 0 0 0;
+		padding: 0;
+		list-style-type: none;
+
+		li.navItem__container {
+			position: relative;
+			display: inline;
+			margin: 1rem 0;
+			flex: 1;
+
+			a.navItem__link {
+				width: 18rem;
+				display: inline-block;
+				padding: 1rem 0;
+				background: $white1;
+				color: $black1;
+				font-size: 1.25rem;
+				text-indent: 2rem;
+				transition: all $bounce 200ms;
+			}
+
+			a.navItem__link:hover {
+				text-indent: 2.5rem;
+			}
+
+			a.navItem__link.selectedPage,
+			a.navItem__link.selectedPage:hover,
+			a.navItem__link.selectedPage:focus,
+			a.navItem__link.selectedPage:active {
+				opacity: 80%;
+				text-indent: 4rem;
+				cursor: default;
+			}
+
+			a.navItem__link:active,
+			a.navItem__link:focus {
+				opacity: 50%;
+				text-indent: 4rem;
+			}
+		}
+	}
+}
+
+/**************************
+	* Styling for the input element
+	* and the menu buttin lines
+	***************************/
+
+input.navBar__checkbox {
+	display: none;
+}
+input.navBar__checkbox
+	~ div.navBar__container
+	> label.navBar__button
+	> span.navBar__bar__container
+	> span.navBar__bar:nth-child(1) {
+	top: 0rem;
+	left: 0rem;
+}
+input.navBar__checkbox
+	~ div.navBar__container
+	> label.navBar__button
+	> span.navBar__bar__container
+	> span.navBar__bar:nth-child(2) {
+	top: 0.75rem;
+	left: 0rem;
+}
+input.navBar__checkbox
+	~ div.navBar__container
+	> label.navBar__button
+	> span.navBar__bar__container
+	> span.navBar__bar:nth-child(3) {
+	top: 1.5rem;
+	left: 0rem;
+}
+input.navBar__checkbox:checked
+	~ div.navBar__container
+	> label.navBar__button
+	> span.navBar__bar__container
+	> span.navBar__bar:nth-child(1) {
+	top: 0.1rem;
+	left: 0.45rem;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+input.navBar__checkbox:checked
+	~ div.navBar__container
+	> label.navBar__button
+	> span.navBar__bar__container
+	> span.navBar__bar:nth-child(2) {
+	opacity: 0;
+	width: 0%;
+	left: 1.3rem;
+}
+input.navBar__checkbox:checked
+	~ div.navBar__container
+	> label.navBar__button
+	> span.navBar__bar__container
+	> span.navBar__bar:nth-child(3) {
+	top: 1.4rem;
+	left: 0.45rem;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/**************************
+		* Hide/Show the navigation
+		* menu from toggling checkbox
+		***************************/
+
+input.navBar__checkbox ~ div.navMenu__container {
+	left: -100vw;
+}
+input.navBar__checkbox:checked ~ div.navMenu__container {
+	left: 0;
+}
+
+@media (min-width: $min_tablet) {
+	div.navBar__container {
+		display: none;
+	}
+
+	div.navMenu__container {
+		ul.navMenu__items {
+			height: 100%;
+			flex-direction: row;
+			justify-content: flex-end;
+			margin: 0 2rem 0 0;
+			align-items: center;
+
+			li.navItem__container {
+				flex: 0;
+				margin: 0 0 0 0;
+
+				a.navItem__link {
+					display: inline;
+					margin: 0 1rem;
+					padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+					background: none;
+					color: $white1;
+					text-indent: 0rem;
+					box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0);
+					transition: all ease 200ms;
+				}
+
+				a.navItem__link:hover {
+					color: $white2;
+					text-indent: 0rem;
+					box-shadow: 0 1px 0 0 $white1;
+				}
+
+				a.navItem__link.selectedPage,
+				a.navItem__link.selectedPage:hover,
+				a.navItem__link.selectedPage:focus,
+				a.navItem__link.selectedPage:active {
+					opacity: 1;
+					color: $white1;
+					text-indent: 0rem;
+					box-shadow: 0 1px 0 0 $white1;
+					cursor: default;
+				}
+
+				a.navItem__link:active,
+				a.navItem__link:focus {
+					opacity: 1;
+					color: $white1_a5;
+					text-indent: 0rem;
+					box-shadow: 0 1px 0 0 $white1_a5;
+				}
+			}
+		}
+	}
+
+	input.navBar__checkbox ~ div.navMenu__container {
+		left: 0;
+		height: $navbar_width;
+	}
+	input.navBar__checkbox:checked ~ div.navMenu__container {
+		left: 0;
+		height: $navbar_width;
+	}
+}

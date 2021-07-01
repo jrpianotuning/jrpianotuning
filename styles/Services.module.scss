@@ -1,0 +1,8 @@
+@import "./variables.module.scss";
+
+.textContent__container {
+	max-width: 80rem;
+	margin: -10rem auto 0 auto;
+	border-radius: $radius_small;
+	background: white;
+}

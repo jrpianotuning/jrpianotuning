@@ -1,0 +1,35 @@
+@import "./variables.module.scss";
+
+a.bookButton__link,
+button.bookButton__button {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 1rem;
+	background: $red1;
+	color: $white1;
+	font-size: 1.2rem;
+	font-weight: 600;
+	box-shadow: none;
+	transition: all ease 200ms;
+	border: none;
+	outline: none;
+	border-radius: $radius_mini;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0 0.5rem 1rem -0.75rem $black1;
+		background: $red2;
+		color: $white2;
+	}
+
+	&:focus,
+	&:active {
+		box-shadow: none;
+		background: $red1;
+		color: $white1;
+	}
+
+	&:focus {
+		box-shadow: 0 0 0 5px $red1_a5;
+	}
+}

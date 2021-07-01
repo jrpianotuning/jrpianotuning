@@ -1,0 +1,26 @@
+@import "./variables.module.scss";
+
+footer.footer__container {
+	background: $black1;
+	color: $white1;
+	text-align: center;
+	padding: 2rem 0;
+	box-shadow: inset 0 2px 0 -1px $white1_a5;
+
+	div.footer__content__container {
+		div.footer__links {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			span.footer__link__container {
+				margin: 0 1rem;
+			}
+		}
+	}
+
+	p.footer__copy {
+		margin: 0;
+		margin-top: 1rem;
+	}
+}
