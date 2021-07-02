@@ -10,7 +10,10 @@ export default function BookButton(props: { name?: string; type?: "submit" }) {
 				</button>
 			);
 		return (
-			<Link href="/services#form">
+			<Link
+				href="/services#form"
+				as={process.env.BACKEND_URL + "/services#form"}
+			>
 				<a className={styles.bookButton__link}>
 					{props.name ? props.name : "Book an Appointment"}
 				</a>
