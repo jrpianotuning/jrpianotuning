@@ -7,31 +7,22 @@ export default function Footer() {
 			<div className={styles.footer__content__container}>
 				<div className={styles.footer__links}>
 					<span className={styles.footer__link__container}>
-						<Link href="/" as={process.env.BACKEND_URL + "/"}>
+						<Link href="/">
 							<a>Home</a>
 						</Link>
 					</span>
 					<span className={styles.footer__link__container}>
-						<Link
-							href="/services"
-							as={process.env.BACKEND_URL + "/services"}
-						>
+						<Link href="/services">
 							<a>Services</a>
 						</Link>
 					</span>
 					<span className={styles.footer__link__container}>
-						<Link
-							href="/about"
-							as={process.env.BACKEND_URL + "/about"}
-						>
+						<Link href="/about">
 							<a>About</a>
 						</Link>
 					</span>
 					<span className={styles.footer__link__container}>
-						<Link
-							href="/contact"
-							as={process.env.BACKEND_URL + "/contact"}
-						>
+						<Link href="/contact">
 							<a>Contact</a>
 						</Link>
 					</span>

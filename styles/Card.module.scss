@@ -1,0 +1,51 @@
+@import "./variables.module.scss";
+
+div.card__container {
+	flex: 1;
+	min-width: 18rem;
+	min-height: 12rem;
+	max-width: 25rem;
+	max-height: 45rem;
+	margin: 1.5rem;
+	border-radius: $radius_regular;
+	box-shadow: 0.5rem 0.5rem 3rem -1rem rgba(0, 0, 0, 0.25);
+	background: rgb(245, 249, 250);
+	overflow: hidden auto;
+	z-index: 0;
+
+	div.card__body {
+		margin-top: 0.5rem;
+		padding: 0 2rem 1rem 2rem;
+	}
+}
+
+@supports (backdrop-filter: blur(10px)) {
+	div.card__container {
+		background: rgba(245, 249, 250, 0.75);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+}
+
+div.cardHeader__container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem;
+
+	h2 {
+		flex: 1;
+	}
+	span {
+		flex: 0;
+		display: inline-block;
+		font-size: 1.75rem;
+		margin-left: 0.5rem;
+
+		svg {
+			display: block;
+		}
+	}
+}

@@ -1,7 +1,17 @@
+$white1: rgb(246, 252, 255);
+$white2: rgb(235, 243, 247);
+$white3: rgb(226, 233, 236);
+$white4: rgb(213, 222, 226);
+$white5: rgb(197, 209, 214);
+
+$blue1: rgb(0, 47, 74);
+$blue2: rgb(4, 62, 95);
+$blue3: rgb(11, 79, 119);
+$blue4: rgb(24, 100, 145);
+$blue5: rgb(41, 120, 165);
+
 $black1: rgb(0, 47, 74);
 $black1_a5: rgba(40, 40, 40, 0.5);
-$white1: rgb(232, 220, 210);
-$white2: rgb(252, 240, 230);
 $white1_a5: rgba(232, 220, 210, 0.5);
 $red1: rgb(210, 0, 13);
 $red1_a5: rgba(122, 35, 35, 0.5);
@@ -21,3 +31,12 @@ $radius_mini: 0.25rem;
 $radius_small: 0.5rem;
 $radius_regular: 1rem;
 $radius_large: 2rem;
+
+$navbar_background: $white2;
+$navbar_color: $blue1;
+$navmenu_background: $white2;
+$navlink_background: $blue1;
+$navlink_color: $white2;
+
+$footer_background: $white2;
+$footer_color: $blue1;

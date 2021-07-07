@@ -7,15 +7,31 @@ div.contrast__container {
 	color: $white1;
 }
 
+section.overlay {
+}
+
 .textContent__container {
 	background: white;
 }
 
 section.section {
+	margin-bottom: 2rem;
+}
+
+div.section__heading {
+	height: auto;
+	// background: red;
+	margin: 10vh 10vw;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+div.section__cardContainer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 }
 
 div.bookButton__container {

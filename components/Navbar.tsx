@@ -17,7 +17,7 @@ export default function Navbar() {
 			return <a className={css_linkSelected(url)}>{text}</a>;
 		else
 			return (
-				<Link href={url} as={process.env.BACKEND_URL + url}>
+				<Link href={url}>
 					<a className={css_linkSelected(url)}>{text}</a>
 				</Link>
 			);
