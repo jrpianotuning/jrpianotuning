@@ -13,42 +13,43 @@ export default function Home() {
 	return (
 		<Page title="JRPianoTuning">
 			<section className={`${styles.section}`}>
-				<ParallaxBackground src="./img/piano1.jpg" />
-
-				<div className={`${styles.section__heading}`}>
-					<h2>JR Piano Tuning</h2>
-				</div>
-
-				<div className={`${styles.section__cardContainer}`}>
-					<Card
-						title="Our Goal"
-						icon={FaTrophy}
-						iconColor="rgb(228, 193, 39)"
-					>
-						Unlock your family&apos;s potential to create better
-						sounding music.
-					</Card>
-					<Card title="Our Method" icon={IoMusicalNotes}>
-						Provide consistent, thorough, timely care for your piano
-						through tuning and repairs so it sounds and feels just
-						right.
-					</Card>
-					<Card
-						title="Our Locations"
-						icon={FaMapMarkerAlt}
-						iconColor="rgb(189, 23, 23)"
-					>
-						Near our homes and families, including Cache Valley, UT,
-						and White Mountains, AZ.
-					</Card>
-
-					<div className={styles.bookButton__container}>
-						<BookButton />
+				<ParallaxBackground src="./img/piano1.jpg">
+					<div className={`${styles.section__heading}`}>
+						<h1>JR Piano Tuning</h1>
 					</div>
-				</div>
+
+					<div className={`${styles.section__cardContainer}`}>
+						<Card
+							title="Our Goal"
+							icon={FaTrophy}
+							iconColor="rgb(228, 193, 39)"
+						>
+							Unlock your family&apos;s potential to create better
+							sounding music.
+						</Card>
+						<Card title="Our Method" icon={IoMusicalNotes}>
+							Provide consistent, thorough, timely care for your
+							piano through tuning and repairs so it sounds and
+							feels just right.
+						</Card>
+						<Card
+							title="Our Locations"
+							icon={FaMapMarkerAlt}
+							iconColor="rgb(189, 23, 23)"
+						>
+							Near our homes and families, including Cache Valley,
+							UT, and White Mountains, AZ.
+						</Card>
+					</div>
+				</ParallaxBackground>
 			</section>
-			<section className={styles.section}>
-				<div className={styles.contrast__container}>
+
+			<section className={`${styles.section}`}>
+				<BookButton />
+			</section>
+
+			<section className={`${styles.section}`}>
+				<div className={`${styles.qualifications__section}`}>
 					<h4>Qualifications</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit,

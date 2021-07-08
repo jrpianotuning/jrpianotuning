@@ -3,27 +3,34 @@
 div.contrast__container {
 	padding: 1rem 2rem 1rem 2rem;
 	max-width: 60rem;
-	background: $black1;
-	color: $white1;
-}
-
-section.overlay {
-}
-
-.textContent__container {
-	background: white;
 }
 
 section.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: static;
 	margin-bottom: 2rem;
+}
+
+div.qualifications__section {
+	padding: 0 1.5rem;
+	max-width: $max_width;
 }
 
 div.section__heading {
 	height: auto;
 	// background: red;
-	margin: 10vh 10vw;
+	// margin: 10vh 10vw;
+	padding: 10vh 0;
+	margin-top: 0;
 	text-align: center;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
+
+	h1 {
+		margin: 0;
+	}
 }
 
 div.section__cardContainer {

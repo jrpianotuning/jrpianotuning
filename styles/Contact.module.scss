@@ -1,0 +1,17 @@
+section.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: static;
+	margin-bottom: 2rem;
+}
+
+div.section__heading {
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}

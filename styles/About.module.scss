@@ -3,16 +3,29 @@
 div.story__container {
 	margin: 0;
 	max-width: 35rem;
-	padding: 0 1rem;
+	padding: 0 1rem 2rem 1rem;
 }
 
-@media (min-width: $min_tablet) {
-	div.story__container {
-		margin: -10rem auto 0 auto;
-		max-width: 35rem;
-		background: white;
-		padding: 0 1rem;
-		border-top-left-radius: $radius_small;
-		border-top-right-radius: $radius_small;
-	}
+div.statement__container {
+	margin: 0;
+	max-width: 35rem;
+	padding: 0 1rem 2rem 1rem;
+}
+
+section.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: static;
+	margin-bottom: 2rem;
+}
+
+div.section__heading {
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
 }
