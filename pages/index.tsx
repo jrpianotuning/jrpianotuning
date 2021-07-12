@@ -19,26 +19,20 @@ export default function Home() {
 					</div>
 
 					<div className={`${styles.section__cardContainer}`}>
-						<Card
-							title="Our Goal"
-							icon={FaTrophy}
-							iconColor="rgb(228, 193, 39)"
-						>
-							Unlock your family&apos;s potential to create better
-							sounding music.
+						<Card title="Our Goal" icon={FaTrophy} iconColor="rgb(228, 193, 39)">
+							Unlock your family&apos;s potential to create better sounding music.
 						</Card>
 						<Card title="Our Method" icon={IoMusicalNotes}>
-							Provide consistent, thorough, timely care for your
-							piano through tuning and repairs so it sounds and
-							feels just right.
+							Provide consistent, thorough, timely care for your piano through tuning
+							and repairs so it sounds and feels just right.
 						</Card>
 						<Card
 							title="Our Locations"
 							icon={FaMapMarkerAlt}
 							iconColor="rgb(189, 23, 23)"
 						>
-							Near our homes and families, including Cache Valley,
-							UT, and White Mountains, AZ.
+							Near our homes and families, including Cache Valley, UT, and White
+							Mountains, AZ.
 						</Card>
 					</div>
 				</ParallaxBackground>
@@ -50,17 +44,18 @@ export default function Home() {
 
 			<section className={`${styles.section}`}>
 				<div className={`${styles.qualifications__section}`}>
-					<h4>Qualifications</h4>
+					<h4>Experience</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu
-						fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit
-						anim id est laborum.
+						Jared Rowles began studying piano technology in 2014 with the Randy Potter
+						School of Piano Technology. Upon his acceptance to BYU, he worked for the
+						BYU Piano Shop from 2017-21, further developing his skills in tuning,
+						repairing and regulating pianos for the School of Music. In March 2021,
+						Jared passed the last of three rigorous exams to become a Registered Piano
+						Technician, one of less than 2,000 technicians to do so. With his combined
+						experience at the School of Music and in the homes of his clients, Jared has
+						tuned over 400 pianos and has 100+ hours of experience with repairs,
+						regulation, and rebuilding. He continues to improve his skills through
+						regular participation in the Piano Technicians Guild.
 					</p>
 				</div>
 			</section>

@@ -17,40 +17,45 @@ export default function About() {
 				<div className={styles.statement__container}>
 					<h3>Mission Statement</h3>
 					<p>
-						Unlock your family&apos;s musical potential by providing
-						consistent, quality care for your piano so you can
-						create more music and memories together.
+						Unlock your family&apos;s musical potential by providing consistent, quality
+						care for your piano so you can create more music and memories together.
 					</p>
 				</div>
+				<div className={styles.statement__container}>
+					<h3>Our Values</h3>
+					<ul>
+						<li>Honesty</li>
+						<li>Thoroughness</li>
+						<li>Respect</li>
+						<li>Clear communication</li>
+						<li>Continuing education</li>
+					</ul>
+				</div>
+
 				<div className={styles.story__container}>
 					<h3>Our Story</h3>
 					<p>
-						Music is powerful. It gathers people and makes any
-						occasion memorable. I believe everyone - and every
-						family - can create it with the right instruments.
+						Music is powerful. It gathers people and makes any occasion memorable. I
+						believe everyone - and every family - can create it with the right
+						instruments.
 						<br></br>
 						<br></br>
-						In my childhood, my family frequently gathered around
-						our piano to sing, creating some of my favorite
-						memories. However, with time, the piano developed issues
-						and those gatherings became less frequent. When I began
-						studying piano technology in 2014, I quickly realized
-						that many pianos - ours included - were playing far
-						below their musical potential because they lacked the
-						care they needed to perform well.
+						In my childhood, my family frequently gathered around our piano to sing,
+						creating some of my favorite memories. However, with time, the piano
+						developed issues and those gatherings became less frequent. When I began
+						studying piano technology in 2014, I quickly realized that many pianos -
+						ours included - were playing far below their musical potential because they
+						lacked the care they needed to perform well.
 						<br></br>
-						<br></br>With my training, I could provide proper care
-						for my family&apos;s piano, allowing us to once again
-						enjoy creating music together.
+						<br></br>With my training, I could provide proper care for my family&apos;s
+						piano, allowing us to once again enjoy creating music together.
 						<br></br>
-						<br></br>I founded JR Piano Tuning to unlock that same
-						musical potential in the homes and families of those it
-						serves. When a client begins to play a freshly serviced
-						piano, their face lights up with a smile, and they call
-						their family in to listen, I know JR Piano Tuning has
-						fulfilled its mission. Their family will have many
-						musical gatherings to come - because their piano sounds
-						and feels just right.
+						<br></br>I founded JR Piano Tuning to unlock that same musical potential in
+						the homes and families of those it serves. When a client begins to play a
+						freshly serviced piano, their face lights up with a smile, and they call
+						their family in to listen, I know JR Piano Tuning has fulfilled its mission.
+						Their family will have many musical gatherings to come - because their piano
+						sounds and feels just right.
 					</p>
 				</div>
 			</section>
