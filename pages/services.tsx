@@ -19,22 +19,16 @@ export default function Services() {
 				<BookButton />
 			</section>
 
-			<div className={styles.statement__container}>
+			<div className={styles.guarantee__container}>
 				<h3>Our Guarantee:</h3>
 				<p>
 					At JR Piano Tuning, we are committed to providing our clients with the best
-					service we can offer. Therefore, we strive to increase our skills and knowledge
-					through regular training and through participation in the{" "}
-					{/* TODO: open on new tab */}
-					<a href="https://www.ptg.org/about/registered-piano-technician">
-						Piano Technicians Guild
-					</a>{" "}
-					so we can provide you with the highest quality of piano service. If our service
-					does not meet your expectations, we will work with you to resolve your concern.
-					If a tuning is unsatisfactory and you contact us by phone or email within two
-					weeks of the tuning, we will provide a <b>complimentary return visit</b> to
-					correct the concern. If a purchased repair or regulation fails due to
-					misdiagnosis or a mistake on the part of the technician, we will either{" "}
+					service we can offer. If our service does not meet your expectations, we will
+					work with you to resolve your concern. If a tuning is unsatisfactory and you
+					contact us by phone or email within two weeks of the tuning, we will provide a{" "}
+					<b>complimentary return visit</b> to correct the concern. If a purchased repair
+					or regulation fails due to misdiagnosis or a mistake on the part of the
+					technician, we will either{" "}
 					<b>refund your money or provide an equivalent value of prepaid labor</b> to
 					solve the issue.
 				</p>

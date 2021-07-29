@@ -1,0 +1,27 @@
+@import "./global.scss";
+
+.main {
+	flex: 1 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.header,
+.main,
+.footer {
+	min-width: 20rem;
+}
+
+.footer_content {
+	padding: 1rem;
+	background: $footerBackground;
+	box-shadow: inset 0 2px 0 -1px $footerBorderColor;
+}
+
+.info_box {
+	padding: 0 1rem 0 1rem;
+}
+
+.navlinks {
+	padding: 0 1rem 0 1rem;
+}

@@ -16,9 +16,9 @@ export default function Contact() {
 			<section className={`${styles.section}`}>
 				<div>
 					<h4>Hours</h4>
-					<p>Monday - Friday: 9 AM - 7 PM</p>
+					<p>Monday - Friday: 9 AM - 5 PM</p>
 					<h4>Phone</h4>
-					<p>(801) 555-1234</p>
+					<p>(928) 229-1666</p>
 					<h4>Email</h4>
 					<p>jared@jrpianotuning.com</p>
 				</div>

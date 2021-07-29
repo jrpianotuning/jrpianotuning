@@ -1,0 +1,68 @@
+@import "../../../styles/variables.module.scss";
+
+div.button__container {
+	position: relative;
+	background: red;
+}
+
+// input.navBar__toggle__checkbox {
+// 	display: none;
+// }
+
+// // Animatable hamburger menu
+// input.navBar__toggle__checkbox:checked ~ label.navBar__toggle__label > span > span:nth-child(1) {
+// 	top: 1.85rem;
+// 	transform: rotate(45deg);
+// }
+// input.navBar__toggle__checkbox:checked ~ label.navBar__toggle__label > span > span:nth-child(2) {
+// 	transform: scaleX(0);
+// 	opacity: 0;
+// }
+// input.navBar__toggle__checkbox:checked ~ label.navBar__toggle__label > span > span:nth-child(3) {
+// 	top: 1.85rem;
+// 	transform: rotate(-45deg);
+// }
+
+// // Checkbox hamburger menu label
+// label.navBar__toggle__label {
+// 	position: relative;
+// 	display: block;
+// 	cursor: pointer;
+// 	z-index: 5;
+
+// 	span.hamburgerMenu__container {
+// 		display: block;
+// 		position: absolute;
+// 		width: $navBar_height;
+// 		height: $navBar_height;
+
+// 		span {
+// 			position: absolute;
+// 			display: block;
+// 			width: 3rem;
+// 			height: 0.4rem;
+// 			left: 0.5rem;
+// 			margin: 0;
+// 			background: $black2;
+// 			transition: all ease 150ms;
+// 		}
+
+// 		span:nth-child(1) {
+// 			top: 0.85rem;
+// 		}
+// 		span:nth-child(2) {
+// 			top: 1.85rem;
+// 		}
+// 		span:nth-child(3) {
+// 			top: 2.85rem;
+// 		}
+// 	}
+// }
+
+// input.navBar__toggle__checkbox:checked ~ div.navBar__container {
+// 	transform: translateY(0vh);
+// }
+
+// input.navBar__toggle__checkbox:checked ~ div.navBar__container > div.navBar__links__container {
+// 	// background: red;
+// }

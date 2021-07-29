@@ -1,0 +1,99 @@
+@import "../../variables.module.scss";
+
+// Checkbox
+
+div.navBar__container {
+	background-color: $white3;
+	box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
+	transform: translateY(calc(-100vh + 4rem));
+	transition: all ease 200ms;
+
+	div.navBar__links__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+
+		a.navMenu__link {
+			display: inline-block;
+			height: auto;
+			user-select: none;
+
+			&:last-child {
+				margin: 0 0 0 0;
+			}
+		}
+
+		a.link__image {
+			// min-height: 32px;
+			// min-width: 32px;
+			// margin-bottom: 2rem;
+		}
+
+		div.navLinks__container {
+			margin-top: $medium;
+
+			a {
+				margin: $small;
+				font-size: 1.25rem;
+
+				svg {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+	input.navBar__toggle__checkbox:checked ~ div.navBar__links__container {
+		display: flex;
+	}
+}
+
+@media (min-width: 700px) {
+	div.navBar__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: $max_width;
+
+		input.navBar__toggle__checkbox {
+			display: none;
+		}
+
+		div.navBar__links__container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+			margin: $medium $small;
+			width: 100%;
+			max-width: $max_navBar_width;
+			overflow: hidden;
+
+			a {
+				display: inline-block;
+				margin: 0 $large 0 0;
+				height: auto;
+				user-select: none;
+
+				&:last-child {
+					margin: 0 0 0 0;
+				}
+
+				svg {
+					display: block;
+					font-size: 1.2rem;
+				}
+			}
+
+			a.link__image {
+				min-height: 32px;
+				min-width: 32px;
+			}
+		}
+	}
+}

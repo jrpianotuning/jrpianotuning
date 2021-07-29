@@ -28,9 +28,6 @@ export default function Footer() {
 					</span>
 				</div>
 			</div>
-			<p className={styles.footer__copy}>
-				2021 &copy; Copyright. All Rights Reserved.
-			</p>
 		</footer>
 	);
 }

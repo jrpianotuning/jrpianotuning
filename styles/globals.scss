@@ -4,15 +4,25 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI,
-		Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-		sans-serif;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+		Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	background-color: $white1;
+	color: $black3;
 }
 
 a {
-	color: inherit;
+	color: rgb(46, 112, 150);
 	text-decoration: none;
+
+	&:hover {
+		color: rgb(67, 143, 187);
+		text-decoration: underline;
+	}
+
+	&:active {
+		color: rgb(30, 93, 129);
+		text-decoration: underline;
+	}
 }
 
 * {
