@@ -47,3 +47,16 @@
 	flex-wrap: wrap;
 	margin: 4rem 0;
 }
+
+.experience_container {
+	position: relative;
+	display: flex;
+	background-color: $white3;
+
+	.experience_container--content {
+		margin: 0 auto;
+		position: relative;
+		padding: 4rem 2rem;
+		max-width: 45rem;
+	}
+}

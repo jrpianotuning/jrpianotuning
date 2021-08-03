@@ -56,8 +56,23 @@ export default function Home() {
 				</div>
 			</section>
 			<section>
-				<div>
-					<h3>Why Us?</h3>
+				<div className={styles.experience_container}>
+					<div className={styles["experience_container--content"]}>
+						<h3>Why Us?</h3>
+						<p>
+							Jared Rowles began studying piano technology in 2014 with the Randy
+							Potter School of Piano Technology. Upon his acceptance to BYU, he worked
+							for the BYU Piano Shop from 2017-21, further developing his skills in
+							tuning, repairing and regulating pianos for the School of Music. In
+							March 2021, Jared passed the last of three rigorous exams to become a
+							Registered Piano Technician, one of less than 2,000 technicians to do
+							so. With his combined experience at the School of Music and in the homes
+							of his clients, Jared has tuned over 400 pianos and has 100+ hours of
+							experience with repairs, regulation, and rebuilding. He continues to
+							improve his skills through regular participation in the Piano
+							Technicians Guild.
+						</p>
+					</div>
 				</div>
 			</section>
 		</Page>
