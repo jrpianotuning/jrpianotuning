@@ -20,9 +20,12 @@ export default function Home() {
 							height={400}
 						/>
 					</div>
-					<h1 className={styles.title}>
-						JR<br></br>PIANO<br></br>TUNING
-					</h1>
+					<div>
+						<h1 className={styles.title}>
+							JR<br></br>PIANO<br></br>TUNING
+						</h1>
+						<BookButton />
+					</div>
 				</div>
 			</section>
 			<section>
@@ -58,8 +61,8 @@ export default function Home() {
 			<section>
 				<div className={styles.experience_container}>
 					<div className={styles["experience_container--content"]}>
-						<h3>Why Us?</h3>
-						<p>
+						{/* <h3>Why Us?</h3> */}
+						{/* <p>
 							Jared Rowles began studying piano technology in 2014 with the Randy
 							Potter School of Piano Technology. Upon his acceptance to BYU, he worked
 							for the BYU Piano Shop from 2017-21, further developing his skills in
@@ -71,8 +74,41 @@ export default function Home() {
 							experience with repairs, regulation, and rebuilding. He continues to
 							improve his skills through regular participation in the Piano
 							Technicians Guild.
-						</p>
+						</p> */}
+						<div className={styles.experience_list}>
+							<div className={styles.list_container}>
+								<h4>
+									<b>400+</b>
+								</h4>
+								<h5>Pianos Tuned</h5>
+								<a href="#">Learn more...</a>
+							</div>
+							<div className={styles.list_container}>
+								<h4>
+									<b>100+</b>
+								</h4>
+								<h5>Hours of Repairs</h5>
+								<a href="#">Learn more...</a>
+							</div>
+							<div className={styles.list_container}>
+								<h4>
+									<b>5+</b>
+								</h4>
+								<h5>Years Registered Piano Technician</h5>
+								<a href="#">Learn more...</a>
+							</div>
+						</div>
 					</div>
+				</div>
+			</section>
+			<section>
+				<div className={styles.missionStatement_container}>
+					<h3>Mission Statement</h3>
+					<p>
+						Our purpose is to unlock your family's musical potential by providing
+						consistent, quality care for your piano so you can create more music and
+						memories together.
+					</p>
 				</div>
 			</section>
 		</Page>
