@@ -1,18 +1,20 @@
+import Image from "next/image";
 import Page from "../components/Page/Page";
 import styles from "../styles/Services.module.scss";
 import ParallaxBackground from "../components/ParallaxBackground";
 import Card from "../components/Card";
 import BookButton from "../components/BookButton";
+import Hero from "../components/UI/Hero";
 
 export default function Services() {
 	return (
 		<Page title="JRPianoTuning - Our Services">
-			<section className={`${styles.section}`}>
-				<ParallaxBackground src="./img/piano1.jpg">
-					<div className={`${styles.section__heading}`}>
-						<h1>Our Services</h1>
+			<section>
+				<Hero image="/img/services_page.jpg" height="" darken>
+					<div className={styles.hero_container}>
+						<h1 className={styles.hero_title}>Our Services</h1>
 					</div>
-				</ParallaxBackground>
+				</Hero>
 			</section>
 
 			<section className={`${styles.section}`}>

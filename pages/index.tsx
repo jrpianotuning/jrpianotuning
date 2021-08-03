@@ -14,7 +14,7 @@ export default function Home() {
 				<div className={styles.background_image}>
 					<div className={styles.logo_container}>
 						<Image
-							src="/img/logo.png"
+							src="/img/logo-notext.png"
 							alt="JRPianoTuning logo"
 							width={400}
 							height={400}
@@ -30,13 +30,35 @@ export default function Home() {
 			</section>
 			<section>
 				<div className={styles.card_container}>
-					<Card title="Our Goal">
+					<div className={styles.our_content}>
+						<h2>Our Goal</h2>
+						<p>
+							Unlock your family's potential to create beautiful music through your
+							piano.
+						</p>
+						<Link href="/about">Learn&nbsp;more...</Link>
+					</div>
+					<div className={styles.our_content}>
+						<h2>Our Method</h2>
+						<p>
+							Provide consistent, thorough, timely care for your piano through tuning
+							and repairs so it sounds and feels just right.
+						</p>
+						<Link href="/about">Learn&nbsp;more...</Link>
+					</div>
+					<div className={styles.our_content}>
+						<h2>Our Locations</h2>
+						<p>Near home and family, in Cache Valley, UT and White Mountains, AZ.</p>
+						<Link href="/about">Learn&nbsp;more...</Link>
+					</div>
+
+					{/* <Card title="Our Goal">
 						<p>
 							Unlock your family's potential to create beautiful music through your
 							piano.
 							<br />
 							<br />
-							<Link href="/about">Learn&nbsp;more...</Link>
+							<Link href="/services">Learn&nbsp;more...</Link>
 						</p>
 					</Card>
 					<Card title="Our Method">
@@ -55,7 +77,7 @@ export default function Home() {
 							<br />
 							<Link href="#">View&nbsp;map...</Link>
 						</p>
-					</Card>
+					</Card> */}
 				</div>
 			</section>
 			<section>
@@ -103,7 +125,7 @@ export default function Home() {
 			</section>
 			<section>
 				<div className={styles.missionStatement_container}>
-					<h3>Mission Statement</h3>
+					<h2>Mission Statement:</h2>
 					<p>
 						Our purpose is to unlock your family's musical potential by providing
 						consistent, quality care for your piano so you can create more music and

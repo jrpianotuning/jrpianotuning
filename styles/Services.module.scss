@@ -1,5 +1,18 @@
 @import "./variables.module.scss";
 
+.hero_container {
+	position: relative;
+	width: auto;
+	background: $white2;
+	padding: 1rem 1.5rem;
+
+	.hero_title {
+		display: inline;
+		// color: $white2;
+		font-weight: bold;
+	}
+}
+
 .textContent__container {
 	max-width: 80rem;
 	margin: -10rem auto 0 auto;

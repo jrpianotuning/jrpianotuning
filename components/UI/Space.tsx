@@ -1,7 +1,5 @@
-import styles from "./Space.module.scss";
-
 const Space: React.FunctionComponent = () => {
-	return <div className={styles.space}></div>;
+	return <div style={{ flex: "1 0" }}></div>;
 };
 
 export default Space;
