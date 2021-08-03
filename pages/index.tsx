@@ -5,44 +5,59 @@ import BookButton from "../components/BookButton";
 import ParallaxBackground from "../components/ParallaxBackground";
 
 import Card from "../components/Card";
+import Link from "next/link";
 
 export default function Home() {
 	return (
 		<Page title="JRPianoTuning">
-			<section className={`${styles.section}`}>
-				<ParallaxBackground src="./img/piano1.jpg">
-					<div className={`${styles.section__heading}`}>
-						<h1>JR Piano Tuning</h1>
+			<section>
+				<div className={styles.background_image}>
+					<div className={styles.logo_container}>
+						<Image
+							src="/img/logo.png"
+							alt="JRPianoTuning logo"
+							width={400}
+							height={400}
+						/>
 					</div>
-
-					<div className={`${styles.section__cardContainer}`}>
-						<Card title="Our Goal">
-							Unlock your family&apos;s potential to create beautiful music through
-							your piano.
-						</Card>
-						<Card title="Our Method">
+					<h1 className={styles.title}>
+						JR<br></br>PIANO<br></br>TUNING
+					</h1>
+				</div>
+			</section>
+			<section>
+				<div className={styles.card_container}>
+					<Card title="Our Goal">
+						<p>
+							Unlock your family's potential to create beautiful music through your
+							piano.
+							<br />
+							<br />
+							<Link href="/about">Learn&nbsp;more...</Link>
+						</p>
+					</Card>
+					<Card title="Our Method">
+						<p>
 							Provide consistent, thorough, timely care for your piano through tuning
-							and repairs so it sounds and feels <i>just right</i>.
-						</Card>
-						<Card title="Our Locations">
+							and repairs so it sounds and feels just right.
+							<br />
+							<br />
+							<Link href="/services">Learn&nbsp;more...</Link>
+						</p>
+					</Card>
+					<Card title="Our Locations">
+						<p>
 							Near home and family, in Cache Valley, UT and White Mountains, AZ.
-						</Card>
-					</div>
-				</ParallaxBackground>
+							<br />
+							<br />
+							<Link href="#">View&nbsp;map...</Link>
+						</p>
+					</Card>
+				</div>
 			</section>
-
-			<section className={`${styles.section}`}>
-				<BookButton />
-			</section>
-
-			<section className={`${styles.section}`}>
-				<div className={`${styles.qualifications__section}`}>
-					<h4>Experience</h4>
-					<ul>
-						<li>Registered Piano Technician</li>
-						<li>400+ Pianos Tuned</li>
-						<li>100+ Hours of technical care</li>
-					</ul>
+			<section>
+				<div>
+					<h3>Why Us?</h3>
 				</div>
 			</section>
 		</Page>
