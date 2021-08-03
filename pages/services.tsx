@@ -1,4 +1,4 @@
-import Page from "../components/Page";
+import Page from "../components/Page/Page";
 import styles from "../styles/Services.module.scss";
 import ParallaxBackground from "../components/ParallaxBackground";
 import Card from "../components/Card";

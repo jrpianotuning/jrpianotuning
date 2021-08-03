@@ -1,27 +1,156 @@
 @import "./global.scss";
 
+.header,
+.main,
+.footer {
+	min-width: 240px;
+}
+
 .main {
 	flex: 1 0;
 	width: 100%;
 	z-index: 0;
 }
 
-.header,
-.main,
 .footer {
-	min-width: 20rem;
-}
-
-.footer_content {
-	padding: 1rem;
 	background: $footerBackground;
 	box-shadow: inset 0 2px 0 -1px $footerBorderColor;
+	display: block;
+
+	.footer_content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+		align-content: center;
+		padding: 2rem 1rem;
+
+		.footer_content--box {
+			position: relative;
+			display: block;
+			max-width: 18rem;
+			min-width: 12rem;
+			width: 100%;
+			flex: 1;
+		}
+	}
 }
 
-.info_box {
-	padding: 0 1rem 0 1rem;
+.info_box,
+.footer__navLinks {
+	padding: 0 1rem;
 }
 
-.navlinks {
-	padding: 0 1rem 0 1rem;
+.navMenu__container--bar {
+	background-color: $navBarBackground;
+}
+.navMenu__container {
+	background-color: $navMenuBackground;
+	display: flex;
+	flex-direction: row;
+
+	.header__navLinks {
+		max-width: 500px;
+
+		.header__navLinks--link {
+			margin: 1rem 1rem;
+
+			a {
+				font-size: large;
+				position: relative;
+				padding: 0.75rem;
+				border-radius: 5px;
+				color: $blue4;
+				transition: all ease 100ms;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: $blue2;
+				background: rgba(0, 5, 20, 0.025);
+			}
+
+			a:active,
+			a:focus {
+				color: $blue2;
+				background: rgba(0, 5, 20, 0.06);
+			}
+		}
+
+		.header__navLinks--link--active {
+			a {
+				color: $black2;
+				background: rgba(0, 5, 20, 0.075);
+				cursor: default;
+				pointer-events: none;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.navMenu__container--dynamic {
+	background-color: $navBarBackground;
+
+	.header__navLinks {
+		padding-top: 3rem;
+
+		.header__navLinks--link {
+			margin: 1rem 0;
+			max-width: 75%;
+			min-width: 6rem;
+			background: $blackKeyLink;
+
+			&:nth-child(5n) {
+				margin: 5rem 0 1rem 0;
+			}
+
+			a {
+				position: relative;
+				padding: 1rem;
+				color: $white3;
+				display: block;
+				transition: all ease 100ms;
+			}
+
+			a:focus,
+			a:active,
+			a.active {
+				text-indent: 0.5rem;
+				right: 0rem;
+			}
+
+			a:hover {
+				text-indent: 0.5rem;
+			}
+
+			a:after {
+				content: "";
+				position: absolute;
+				height: 100%;
+				width: 1rem;
+				top: 0;
+				right: 0rem;
+				background-color: $blackKeyLink;
+				transition: all ease 200ms;
+			}
+
+			a:hover:after {
+				right: -1rem;
+			}
+		}
+
+		.header__navLinks--link--active {
+			a {
+				text-indent: 0.5rem;
+				right: -1rem;
+				cursor: default;
+				pointer-events: none;
+				text-decoration: none;
+			}
+			a:hover:after {
+				right: 0rem;
+			}
+		}
+	}
 }

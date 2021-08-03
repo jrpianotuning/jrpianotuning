@@ -1,12 +1,13 @@
 import styles from "./Copyright.module.scss";
 
-const Copyright = props => {
+const Copyright: React.FunctionComponent<{ [x: string]: any }> = (props) => {
+	const { className, ...otherProps } = props;
 	return (
-		<div className={`${styles.copyright} ${props.className ?? ""}`}>
-			<span>2021 &copy; Copyright. All Rights Reserved.</span>
-			<span>
+		<div {...otherProps} className={`${styles.copyright} ${className || ""}`}>
+			<p>2021 &copy; Copyright. All Rights Reserved.</p>
+			<p>
 				Designed by <a href="https://RATIU5.DEV/">RATIU5DEV</a>
-			</span>
+			</p>
 		</div>
 	);
 };

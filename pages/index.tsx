@@ -9,7 +9,7 @@ import Card from "../components/Card";
 export default function Home() {
 	return (
 		<Page title="JRPianoTuning">
-			{/* <section className={`${styles.section}`}>
+			<section className={`${styles.section}`}>
 				<ParallaxBackground src="./img/piano1.jpg">
 					<div className={`${styles.section__heading}`}>
 						<h1>JR Piano Tuning</h1>
@@ -44,7 +44,7 @@ export default function Home() {
 						<li>100+ Hours of technical care</li>
 					</ul>
 				</div>
-			</section> */}
+			</section>
 		</Page>
 	);
 }

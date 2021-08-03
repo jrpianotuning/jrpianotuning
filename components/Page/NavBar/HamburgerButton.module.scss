@@ -1,68 +1,40 @@
-@import "../../../styles/variables.module.scss";
-
-div.button__container {
-	position: relative;
-	background: red;
+.input {
+	display: none;
+}
+.input:checked ~ .label > .hamburger_checkbox--container span:nth-child(1) {
+	transform: translateY(1.13rem) rotate(45deg);
+}
+.input:checked ~ .label > .hamburger_checkbox--container span:nth-child(2) {
+	transform: scaleX(0);
+	opacity: 0;
+}
+.input:checked ~ .label > .hamburger_checkbox--container span:nth-child(3) {
+	transform: translateY(-1rem) rotate(-45deg);
 }
 
-// input.navBar__toggle__checkbox {
-// 	display: none;
-// }
+.label {
+	position: relative;
+	display: block;
+	width: 3.5rem;
+	cursor: pointer;
+	z-index: 5;
 
-// // Animatable hamburger menu
-// input.navBar__toggle__checkbox:checked ~ label.navBar__toggle__label > span > span:nth-child(1) {
-// 	top: 1.85rem;
-// 	transform: rotate(45deg);
-// }
-// input.navBar__toggle__checkbox:checked ~ label.navBar__toggle__label > span > span:nth-child(2) {
-// 	transform: scaleX(0);
-// 	opacity: 0;
-// }
-// input.navBar__toggle__checkbox:checked ~ label.navBar__toggle__label > span > span:nth-child(3) {
-// 	top: 1.85rem;
-// 	transform: rotate(-45deg);
-// }
+	.hamburger_checkbox--container {
+		padding: 0.5rem;
 
-// // Checkbox hamburger menu label
-// label.navBar__toggle__label {
-// 	position: relative;
-// 	display: block;
-// 	cursor: pointer;
-// 	z-index: 5;
+		span {
+			position: relative;
+			display: block;
+			width: 2.5rem;
+			height: 0.25rem;
+			transition: all ease 150ms;
+		}
 
-// 	span.hamburgerMenu__container {
-// 		display: block;
-// 		position: absolute;
-// 		width: $navBar_height;
-// 		height: $navBar_height;
-
-// 		span {
-// 			position: absolute;
-// 			display: block;
-// 			width: 3rem;
-// 			height: 0.4rem;
-// 			left: 0.5rem;
-// 			margin: 0;
-// 			background: $black2;
-// 			transition: all ease 150ms;
-// 		}
-
-// 		span:nth-child(1) {
-// 			top: 0.85rem;
-// 		}
-// 		span:nth-child(2) {
-// 			top: 1.85rem;
-// 		}
-// 		span:nth-child(3) {
-// 			top: 2.85rem;
-// 		}
-// 	}
-// }
-
-// input.navBar__toggle__checkbox:checked ~ div.navBar__container {
-// 	transform: translateY(0vh);
-// }
-
-// input.navBar__toggle__checkbox:checked ~ div.navBar__container > div.navBar__links__container {
-// 	// background: red;
-// }
+		span:nth-child(2) {
+			margin-top: 0.8rem;
+		}
+		span:nth-child(3) {
+			margin-top: 0.8rem;
+		}
+	}
+}

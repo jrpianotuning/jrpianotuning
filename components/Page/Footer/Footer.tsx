@@ -1,12 +1,14 @@
-import { PropsWithChildren } from "react";
 import Copyright from "./Copyright";
 import styles from "./Footer.module.scss";
 
-export default function Footer(props: PropsWithChildren<{ [x: string]: any }>) {
+const Footer: React.FunctionComponent<{ [x: string]: any }> = (props) => {
+	const { className, children, ...otherProps } = props;
 	return (
-		<footer {...props} className={`${props.className ?? ""} ${styles.footer}`}>
-			{props.children}
+		<footer {...otherProps} className={`${styles.footer} ${className || ""}`}>
+			{children}
 			<Copyright />
 		</footer>
 	);
-}
+};
+
+export default Footer;

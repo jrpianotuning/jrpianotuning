@@ -1,29 +1,37 @@
-import { useState, PropsWithChildren } from "react";
-
 import styles from "./HamburgerButton.module.scss";
 
-export default function HamburgerButton(
-	props: PropsWithChildren<{ onChange: (e: string) => void; [x: string]: any }>,
-) {
+const HamburgerButton: React.FunctionComponent<{
+	onChange: (e: boolean) => void;
+	color?: string;
+	[x: string]: any;
+}> = (props) => {
+	const { className, children, color, onChange, ...otherProps } = props;
+
 	const handleChange = (event) => {
-		props.onChange(event.target.checked);
+		onChange(event.target.checked);
 	};
 
 	return (
-		<div className={styles.button__container}>
+		<>
 			<input
-				id="navBarToggleID"
-				type="checkbox"
 				onChange={handleChange}
-				className={styles.navBar__toggle__checkbox}
+				className={styles.input}
+				type="checkbox"
+				id="hamburger_checkbox"
+				style={{ display: "none" }}
 			/>
-			<label htmlFor="navBarToggleID" className={styles.navBar__toggle__label}>
-				<span className={styles.hamburgerMenu__container}>
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
+			<label
+				{...otherProps}
+				htmlFor="hamburger_checkbox"
+				className={`${styles.label} ${className || ""}`}
+			>
+				<div className={styles["hamburger_checkbox--container"]}>
+					<span style={{ background: color || "black" }}></span>
+					<span style={{ background: color || "black" }}></span>
+					<span style={{ background: color || "black" }}></span>
+				</div>
 			</label>
-		</div>
+		</>
 	);
-}
+};
+export default HamburgerButton;

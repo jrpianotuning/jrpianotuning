@@ -1,10 +1,12 @@
-import { PropsWithChildren } from "react";
 import styles from "./Header.module.scss";
 
-export default function Header(props: PropsWithChildren<{ [x: string]: any }>) {
+const Header: React.FunctionComponent<{ [x: string]: any }> = (props) => {
+	const { className, children, ...otherProps } = props;
 	return (
-		<header {...props} className={`${props.className ?? ""} ${styles.header__container}`}>
-			{props.children}
+		<header {...otherProps} className={`${styles.header} ${className || ""}`}>
+			{children}
 		</header>
 	);
-}
+};
+
+export default Header;

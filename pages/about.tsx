@@ -1,4 +1,4 @@
-import Page from "../components/Page";
+import Page from "../components/Page/Page";
 import styles from "../styles/About.module.scss";
 import ParallaxBackground from "../components/ParallaxBackground";
 import { TextContent, TextContentContainer } from "../components/TextContent";
