@@ -1,0 +1,54 @@
+@import "./variables.module.scss";
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 60rem;
+	height: auto;
+	top: 0;
+	left: 0;
+	margin: 4rem auto;
+}
+
+.title {
+	// padding: 0.5rem;
+	display: inline-block;
+	margin: 0;
+	padding: 2rem;
+	font-weight: 500;
+	color: $black3;
+}
+
+.title_main {
+	position: relative;
+	display: inline-block;
+	padding: 0.5rem;
+	background: $white1;
+}
+
+.title_sub {
+	position: relative;
+	display: inline-block;
+	padding: 0.25rem 0.5rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+	background: $white1;
+}
+
+.price {
+	text-align: center;
+	background-color: rgb(202, 16, 16);
+	color: $white1;
+	font-weight: 400;
+	position: absolute;
+	display: inline-block;
+	text-align: right;
+	right: 2.5rem;
+	top: -0.15rem;
+	margin: 0;
+	font-size: 1.25rem;
+	font-style: italic;
+	padding: 0.5rem 0.25rem 1.25rem 0.25rem;
+	clip-path: polygon(0 0, 0 100%, 50% 75%, 100% 100%, 100% 0);
+	z-index: 2;
+}

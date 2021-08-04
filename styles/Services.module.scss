@@ -13,32 +13,6 @@
 	}
 }
 
-.textContent__container {
-	max-width: 80rem;
-	margin: -10rem auto 0 auto;
-	border-radius: $radius_small;
-	background: white;
-}
-
-section.section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: static;
-	margin-bottom: 2rem;
-}
-
-div.section__heading {
-	height: 20vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.5rem;
-}
-
-div.guarantee__container {
-	margin: 0 auto;
-	max-width: 50rem;
+.service_box {
+	position: relative;
 }
