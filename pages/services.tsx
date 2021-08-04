@@ -24,7 +24,7 @@ export default function Services() {
 
 			<section>
 				<ServiceBox
-					image="./img/tuning.jpg"
+					image="/img/tuning.jpg"
 					title="Pitch Adjustment"
 					price="$50"
 					description="Make your piano sound new again!"
@@ -39,7 +39,7 @@ export default function Services() {
 					</p>
 				</ServiceBox>
 				<ServiceBox
-					image="./img/cleaning.jpg"
+					image="/img/cleaning.jpg"
 					title="Cleaning"
 					price="$60"
 					description="Make your piano sound new again!"
@@ -54,7 +54,7 @@ export default function Services() {
 					</p>
 				</ServiceBox>
 				<ServiceBox
-					image="./img/repairs.jpg"
+					image="/img/repairs.jpg"
 					title="Repairs & Regulation"
 					price="$120/hr"
 					description="Make your piano sound new again!"
