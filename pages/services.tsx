@@ -10,37 +10,34 @@ export default function Services() {
 	return (
 		<Page title="JRPianoTuning - Our Services">
 			<section>
-				<Hero image="/img/services_page.jpg" height="" darken>
+				<Hero image="/img/services_page.jpg" height="30vh" darken>
 					<div className={styles.hero_container}>
 						<h1 className={styles.hero_title}>Our Services</h1>
 					</div>
 				</Hero>
 			</section>
 
-			<section className={`${styles.section}`}>
+			{/* <section className={`${styles.section}`}>
 				<BookButton />
-			</section>
+			</section> */}
 
-			<div className={styles.guarantee__container}>
-				<h3>Our Guarantee:</h3>
-				<p>
-					At JR Piano Tuning, we are committed to providing our clients with the best
-					service we can offer. If our service does not meet your expectations, we will
-					work with you to resolve your concern. If a tuning is unsatisfactory and you
-					contact us by phone or email within two weeks of the tuning, we will provide a{" "}
-					<b>complimentary return visit</b> to correct the concern. If a purchased repair
-					or regulation fails due to misdiagnosis or a mistake on the part of the
-					technician, we will either{" "}
-					<b>refund your money or provide an equivalent value of prepaid labor</b> to
-					solve the issue.
-				</p>
-			</div>
-
-			{/* three column > 768px w */}
-			{/* Images over heading */}
-
-			<section className={`${styles.section}`}>
-				<Card title="Tuning">
+			<section>
+				<div>
+					<h2>
+						Pitch Adjustment <span>$50</span>
+					</h2>
+				</div>
+				<div>
+					<h2>
+						Cleaning <span>$60</span>
+					</h2>
+				</div>
+				<div>
+					<h2>
+						Repairs & Regulation <span>$120/hr</span>
+					</h2>
+				</div>
+				{/* <Card title="Tuning">
 					Pianos have incredible musical potential - when they are in tune! Changes in
 					temperature and humidity, moving house, and frequent playing cause pianos to
 					fall out of tune, making them less enjoyable to play. If a piano goes too long
@@ -64,10 +61,10 @@ export default function Services() {
 					piano fulfill its potential, as you gather your family around a piano that
 					plays&nbsp;
 					<i>just right</i>!
-				</Card>
+				</Card> */}
 			</section>
 
-			<section className={`${styles.section}`}>
+			<section>
 				<BookButton />
 			</section>
 		</Page>

@@ -33,8 +33,8 @@ export default function Home() {
 					<div className={styles.our_content}>
 						<h2>Our Goal</h2>
 						<p>
-							Unlock your family's potential to create beautiful music through your
-							piano.
+							Unlock your family&rsquo;s potential to create beautiful music through
+							your piano.
 						</p>
 						<Link href="/about">Learn&nbsp;more...</Link>
 					</div>
@@ -127,7 +127,7 @@ export default function Home() {
 				<div className={styles.missionStatement_container}>
 					<h2>Mission Statement:</h2>
 					<p>
-						Our purpose is to unlock your family's musical potential by providing
+						Our purpose is to unlock your family&rsquo;s musical potential by providing
 						consistent, quality care for your piano so you can create more music and
 						memories together.
 					</p>
