@@ -2,6 +2,7 @@
 
 a.bookButton__link,
 button.bookButton__button {
+	position: relative;
 	display: inline-block;
 	margin: 0 auto;
 	padding: 1rem;
@@ -15,6 +16,8 @@ button.bookButton__button {
 	outline: none;
 	border-radius: $radius_mini;
 	cursor: pointer;
+	z-index: 2;
+	text-decoration: none;
 
 	&:hover {
 		box-shadow: 0 0.5rem 1rem -0.75rem $black1;
@@ -30,6 +33,6 @@ button.bookButton__button {
 	}
 
 	&:focus {
-		box-shadow: 0 0 0 5px $red1_a5;
+		box-shadow: 0 0 0 5px rgb(224, 69, 69);
 	}
 }
