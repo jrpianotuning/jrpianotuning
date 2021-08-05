@@ -103,21 +103,21 @@ export default function Home() {
 									<b>400+</b>
 								</h4>
 								<h5>Pianos Tuned</h5>
-								<a href="#">Learn more...</a>
+								<Link href="/about">Learn more...</Link>
 							</div>
 							<div className={styles.list_container}>
 								<h4>
 									<b>100+</b>
 								</h4>
 								<h5>Hours of Repairs</h5>
-								<a href="#">Learn more...</a>
+								<Link href="/about">Learn more...</Link>
 							</div>
 							<div className={styles.list_container}>
 								<h4>
 									<b>5+</b>
 								</h4>
 								<h5>Years Registered Piano Technician</h5>
-								<a href="#">Learn more...</a>
+								<Link href="/about">Learn more...</Link>
 							</div>
 						</div>
 					</div>

@@ -1,0 +1,81 @@
+@import "./variables.module.scss";
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 50;
+	transition: all ease 200ms;
+}
+
+.modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	background-color: $white2;
+	transform: translateY(-50%) translateX(-50%);
+	border-radius: 0.5rem;
+	overflow: hidden;
+	width: 75%;
+	min-width: 15rem;
+	max-width: 50rem;
+	max-height: 30rem;
+	overflow: auto;
+	z-index: 50;
+	backface-visibility: hidden;
+}
+
+.modal_open {
+	opacity: 0;
+}
+.modal_open_active {
+	animation: openModal 200ms ease;
+}
+.modal_closed {
+	opacity: 0;
+}
+.modal_closed_active {
+	animation: closeModal 200ms ease;
+}
+
+.modal_header {
+	display: block;
+	padding: 1rem 2rem 0 2rem;
+	// background-color: $white3;
+
+	h2 {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+.modal_content {
+	padding: 1rem 2rem;
+}
+
+@keyframes openModal {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%) translateX(-50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(-50%) translateX(-50%);
+	}
+}
+
+@keyframes closeModal {
+	0% {
+		opacity: 1;
+		transform: translateY(-50%) translateX(-50%);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-100%) translateX(-50%);
+	}
+}

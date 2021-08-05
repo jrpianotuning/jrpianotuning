@@ -26,6 +26,7 @@ class Structure extends Document {
 				<body>
 					<noscript>You need JavaScript enabled to view this website</noscript>
 					<Main />
+					<div id="modal_overlay"></div>
 					<NextScript />
 				</body>
 			</Html>

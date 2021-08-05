@@ -1,8 +1,5 @@
-import Image from "next/image";
 import Page from "../components/Page/Page";
 import styles from "../styles/Services.module.scss";
-import ParallaxBackground from "../components/ParallaxBackground";
-import Card from "../components/Card";
 import BookButton from "../components/BookButton";
 import Hero from "../components/UI/Hero";
 import ServiceBox from "../components/Services/ServiceBox";
@@ -37,6 +34,7 @@ export default function Services() {
 						twice a year will extend the life of your piano and help your piano sound
 						just right!
 					</p>
+					<BookButton />
 				</ServiceBox>
 				<ServiceBox
 					image="/img/cleaning.jpg"
