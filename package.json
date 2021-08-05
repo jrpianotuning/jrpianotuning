@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build && next export",
-		"deploy": "firebase deploy",
+		"deploy": "npm run build && firebase deploy",
 		"start": "next start",
 		"lint": "next lint"
 	},
