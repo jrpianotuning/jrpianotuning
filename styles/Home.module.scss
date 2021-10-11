@@ -5,15 +5,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	align-content: center;
 	flex-wrap: wrap;
-	overflow: hidden;
 	width: 100%;
 	padding: 2rem;
 	min-height: 30em;
 
 	.logo_container {
 		flex: 1;
+		display: flex;
+		justify-content: flex-end;
 		min-width: 15rem;
 	}
 
