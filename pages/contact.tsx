@@ -18,9 +18,15 @@ export default function Contact() {
 					<h2>Hours</h2>
 					<p>Monday - Friday: 9 AM - 5 PM</p>
 					<h2>Phone</h2>
-					<p>(928) 229-1666</p>
+					<p>
+						<a href="tel:928-229-1666">(928) 229-1666</a>
+					</p>
 					<h2>Email</h2>
-					<p>jared@jrpianotuning.com</p>
+					<p>
+						<a href="mailto:jared@jrpianotuning.com">
+							jared@jrpianotuning.com
+						</a>
+					</p>
 				</div>
 			</section>
 		</Page>

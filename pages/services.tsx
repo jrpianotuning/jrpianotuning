@@ -22,17 +22,18 @@ export default function Services() {
 			<section>
 				<ServiceBox
 					image="/img/tuning.jpg"
-					title="Pitch Adjustment"
-					price="$50"
-					description="Make your piano sound new again!"
-				>
+					title="Tuning"
+					price="$150"
+					description="Make your piano sound new again!">
 					<p>
-						Pianos have incredible musical potential - when they are in tune! Changes in
-						temperature, moving house, and frequent playing cause pianos to fall out of
-						tune. If a piano goes too long without a tuning, it may also require a pitch
-						adjustment before it will stay in tune. Having your piano tuned once or
-						twice a year will extend the life of your piano and help your piano sound
-						just right!
+						Pianos have incredible musical potential - when they are
+						in tune! Changes in temperature, moving house, and
+						frequent playing cause pianos to fall out of tune. If a
+						piano goes too long without a tuning, it may also
+						require a pitch adjustment before it will stay in tune.
+						Having your piano tuned once or twice a year will extend
+						the life of your piano and help your piano sound just
+						right!
 					</p>
 					<BookButton />
 				</ServiceBox>
@@ -40,15 +41,15 @@ export default function Services() {
 					image="/img/cleaning.jpg"
 					title="Cleaning"
 					price="$60"
-					description="Make your piano sound new again!"
-				>
+					description="Put the shine back on your piano again.">
 					<p>
-						Pianos are long-term investments and they can last for decades -
-						that&rsquo;s a long time to gather dust! Over its lifetime, a piano collects
-						dust, insect remains, and perhaps even mice droppings. Regular cleanings
-						will help maintain your piano&rsquo;s sanitation levels and prevent pests
-						that might damage piano felts and parts, so it feels just right to play for
-						years to come.
+						Pianos are long-term investments and they can last for
+						decades - that&rsquo;s a long time to gather dust! Over
+						its lifetime, a piano collects dust, insect remains, and
+						perhaps even mice droppings. Regular cleanings will help
+						maintain your piano&rsquo;s sanitation levels and
+						prevent pests that might damage piano felts and parts,
+						so it feels just right to play for years to come.
 					</p>
 					<BookButton />
 				</ServiceBox>
@@ -56,19 +57,21 @@ export default function Services() {
 					image="/img/repairs.jpg"
 					title="Repairs & Regulation"
 					price="$120/hr"
-					description="Make your piano sound new again!"
-				>
+					description="Help your piano feel just right!">
 					<p>
-						Pianos have incredible musical potential - when they are in tune! Changes in
-						temperature, moving house, and frequent playing cause pianos to fall out of
-						tune. If a piano goes too long without a tuning, it may also require a pitch
-						adjustment before it will stay in tune. Having your piano tuned once or
-						twice a year will extend the life of your piano and help your piano sound
-						just right!
+						Pianos have incredible musical potential - when they are
+						in tune! Changes in temperature, moving house, and
+						frequent playing cause pianos to fall out of tune. If a
+						piano goes too long without a tuning, it may also
+						require a pitch adjustment before it will stay in tune.
+						Having your piano tuned once or twice a year will extend
+						the life of your piano and help your piano sound just
+						right!
 					</p>
 					<BookButton />
 				</ServiceBox>
 			</section>
+			<section></section>
 		</Page>
 	);
 }

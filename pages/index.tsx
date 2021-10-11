@@ -11,16 +11,17 @@ export default function Home() {
 	return (
 		<Page title="JRPianoTuning">
 			<section>
-				<div className={styles.background_image}>
+				<div className={styles.cover}>
+					<div className={styles.background_image}></div>
 					<div className={styles.logo_container}>
 						<Image
-							src="/img/logo-notext.png"
+							src="/img/logo-notext-outline.png"
 							alt="JRPianoTuning logo"
-							width={400}
-							height={400}
+							width={450}
+							height={450}
 						/>
 					</div>
-					<div>
+					<div className={styles.title_content_container}>
 						<h1 className={styles.title}>
 							JR<br></br>PIANO<br></br>TUNING
 						</h1>
@@ -33,22 +34,26 @@ export default function Home() {
 					<div className={styles.our_content}>
 						<h2>Our Goal</h2>
 						<p>
-							Unlock your family&rsquo;s potential to create beautiful music through
-							your piano.
+							Unlock your family&rsquo;s potential to create
+							beautiful music through your piano.
 						</p>
 						<Link href="/about">Learn&nbsp;more...</Link>
 					</div>
 					<div className={styles.our_content}>
 						<h2>Our Method</h2>
 						<p>
-							Provide consistent, thorough, timely care for your piano through tuning
-							and repairs so it sounds and feels just right.
+							Provide consistent, thorough, timely care for your
+							piano through tuning and repairs so it sounds and
+							feels just right.
 						</p>
 						<Link href="/about">Learn&nbsp;more...</Link>
 					</div>
 					<div className={styles.our_content}>
 						<h2>Our Locations</h2>
-						<p>Near home and family, in Cache Valley, UT and White Mountains, AZ.</p>
+						<p>
+							Near home and family, in Cache Valley, UT and White
+							Mountains, AZ.
+						</p>
 						<Link href="/about">Learn&nbsp;more...</Link>
 					</div>
 
@@ -114,9 +119,9 @@ export default function Home() {
 							</div>
 							<div className={styles.list_container}>
 								<h4>
-									<b>5+</b>
+									<b>7+</b>
 								</h4>
-								<h5>Years Registered Piano Technician</h5>
+								<h5>Years Piano Technician</h5>
 								<Link href="/about">Learn more...</Link>
 							</div>
 						</div>
@@ -127,9 +132,10 @@ export default function Home() {
 				<div className={styles.missionStatement_container}>
 					<h2>Mission Statement:</h2>
 					<p>
-						Our purpose is to unlock your family&rsquo;s musical potential by providing
-						consistent, quality care for your piano so you can create more music and
-						memories together.
+						Our purpose is to unlock your family&rsquo;s musical
+						potential by providing consistent, quality care for your
+						piano so you can create more music and memories
+						together.
 					</p>
 				</div>
 			</section>
