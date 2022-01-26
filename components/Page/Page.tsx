@@ -88,7 +88,7 @@ export default function Page(props: React.PropsWithChildren<{ title?: string }>)
 						<div className={styles.info_box}>
 							<p>Monday&nbsp;-&nbsp;Friday: 9&nbsp;AM&nbsp;-&nbsp;5&nbsp;PM</p>
 							<p>
-								Phone: <a href="tel:+1-928-229-1666">(928)&nbsp;229-1666</a>
+								Phone: <a href="tel:+1-801-928-9693">(801)&nbsp;928-9693</a>
 							</p>
 							<p>
 								Email:{" "}
