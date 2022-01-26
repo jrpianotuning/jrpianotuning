@@ -19,7 +19,7 @@ export default function Contact() {
 					<p>Monday - Friday: 9 AM - 5 PM</p>
 					<h2>Phone</h2>
 					<p>
-						<a href="tel:928-229-1666">(928) 229-1666</a>
+						<a href="tel:801-928-9693">(801) 928-9693</a>
 					</p>
 					<h2>Email</h2>
 					<p>
