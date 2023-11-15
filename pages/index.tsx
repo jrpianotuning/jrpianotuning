@@ -12,12 +12,13 @@ export default function Home() {
 				<div className={styles.cover}>
 					<div className={styles.background_image}></div>
 					<div className={styles.logo_container}>
-						<Image
-							src="/img/logo-notext-outline.png"
-							alt="JRPianoTuning logo"
-							width={450}
-							height={450}
-						/>
+						<div className="logo">Logo</div>
+						{/* <Image */}
+						{/* 	src="/img/logo-notext-outline.png" */}
+						{/* 	alt="JRPianoTuning logo" */}
+						{/* 	width={450} */}
+						{/* 	height={450} */}
+						{/* /> */}
 					</div>
 					<div className={styles.title_content_container}>
 						<h1 className={styles.title}>
@@ -124,6 +125,16 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+			<style jsx>{`
+        .logo {
+          background-color: none;
+          background: url("/img/logo-notext-outline.png") no-repeat center
+            center;
+          background-size: cover;
+          width: 450px;
+          height: 450px;
+        }
+      `}</style>
 		</Page>
 	);
 }
