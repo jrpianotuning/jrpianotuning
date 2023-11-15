@@ -2,9 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Page from "../components/Page/Page";
 import BookButton from "../components/BookButton";
-import ParallaxBackground from "../components/ParallaxBackground";
 
-import Card from "../components/Card";
 import Link from "next/link";
 
 export default function Home() {
@@ -32,27 +30,25 @@ export default function Home() {
 			<section>
 				<div className={styles.card_container}>
 					<div className={styles.our_content}>
-						<h2>Our Goal</h2>
+						<h2>Our Purpose</h2>
 						<p>
-							Unlock your family&rsquo;s potential to create
-							beautiful music through your piano.
+							Unlock your family's potential to create beautiful music through
+							your piano.
 						</p>
 						<Link href="/about">Learn&nbsp;more...</Link>
 					</div>
 					<div className={styles.our_content}>
-						<h2>Our Method</h2>
+						<h2>Our Methods</h2>
 						<p>
-							Provide consistent, thorough, timely care for your
-							piano through tuning and repairs so it sounds and
-							feels just right.
+							Provide consistent, thorough, timely care for your piano through
+							tuning and repairs so it sounds and feels <i>just right</i>.{" "}
 						</p>
 						<Link href="/about">Learn&nbsp;more...</Link>
 					</div>
 					<div className={styles.our_content}>
 						<h2>Our Locations</h2>
 						<p>
-							Near home and family, in Cache Valley, UT and White
-							Mountains, AZ.
+							Near home and family, in Cache Valley, UT and <b>nearby areas</b>.{" "}
 						</p>
 						<Link href="/about">Learn&nbsp;more...</Link>
 					</div>
@@ -105,38 +101,27 @@ export default function Home() {
 						<div className={styles.experience_list}>
 							<div className={styles.list_container}>
 								<h4>
-									<b>400+</b>
+									<b>700+</b>
 								</h4>
 								<h5>Pianos Tuned</h5>
 								<Link href="/about">Learn more...</Link>
 							</div>
 							<div className={styles.list_container}>
 								<h4>
-									<b>100+</b>
+									<b>150+</b>
 								</h4>
 								<h5>Hours of Repairs</h5>
 								<Link href="/about">Learn more...</Link>
 							</div>
 							<div className={styles.list_container}>
 								<h4>
-									<b>7+</b>
+									<b>9+</b>
 								</h4>
 								<h5>Years Piano Technician</h5>
 								<Link href="/about">Learn more...</Link>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section>
-				<div className={styles.missionStatement_container}>
-					<h2>Mission Statement:</h2>
-					<p>
-						Our purpose is to unlock your family&rsquo;s musical
-						potential by providing consistent, quality care for your
-						piano so you can create more music and memories
-						together.
-					</p>
 				</div>
 			</section>
 		</Page>

@@ -1,31 +1,61 @@
 @import "./variables.module.scss";
 
 div.story__container {
-	margin: 0;
-	max-width: 35rem;
-	padding: 0 1rem 2rem 1rem;
+  margin: 0;
+  max-width: 35rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 div.statement__container {
-	margin: 0;
-	max-width: 35rem;
-	padding: 0 1rem 2rem 1rem;
+  margin: 0;
+  max-width: 35rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 section.section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: static;
-	margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-bottom: 2rem;
 }
 
 div.section__heading {
-	height: 20vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.5rem;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.missionStatement_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+
+  h2,
+  p {
+    flex: 1;
+    max-width: 28rem;
+    min-width: 18rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 2rem;
+  }
+
+  p {
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow:
+      0 6px 0 -3px $blue5,
+      0 -6px 0 -3px $blue5;
+  }
 }

@@ -1,135 +1,106 @@
 @import "./variables.module.scss";
 
 .cover {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
-	padding: 2rem;
-	min-height: 30em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+  min-height: 30em;
 
-	.logo_container {
-		flex: 1;
-		display: flex;
-		justify-content: flex-end;
-		min-width: 15rem;
-	}
+  .logo_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 15rem;
+  }
 
-	.title_content_container {
-		font-size: clamp(1rem, 2rem, 3rem);
-		flex: 1;
-	}
+  .title_content_container {
+    font-size: clamp(1rem, 2rem, 3rem);
+    flex: 1;
+  }
 
-	.title {
-		margin: 0;
-		font-family: "Alegreya Sans", sans-serif;
-		font-size: 6rem;
-		font-weight: 600;
-		position: relative;
-		color: $white1;
-	}
+  .title {
+    margin: 0;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 6rem;
+    font-weight: 600;
+    position: relative;
+    color: $white1;
+  }
 }
 
 .background_image {
-	content: "";
-	position: absolute;
-	background: url("/img/home_page.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	filter: brightness(0.4);
+  content: "";
+  position: absolute;
+  background: url("/img/home_page.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.4);
 }
 
 .card_container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: center;
-	margin: 4rem 0;
-	padding: 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 4rem 0;
+  padding: 2rem 2rem;
 
-	.our_content {
-		position: relative;
-		flex: 1;
-		padding: 1rem;
-		margin: 1rem;
-		min-width: 18rem;
-		max-width: 30rem;
+  .our_content {
+    position: relative;
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 18rem;
+    max-width: 30rem;
 
-		p {
-		}
-	}
+    p {
+    }
+  }
 }
 
 .experience_container {
-	position: relative;
-	display: flex;
-	align-items: flex-start;
-	background-color: rgba(0, 0, 0, 0.025);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.025);
 
-	.experience_container--content {
-		margin: 0 auto;
-		position: relative;
-		padding: 4rem 2rem;
-		max-width: 45rem;
-	}
+  .experience_container--content {
+    margin: 0 auto;
+    position: relative;
+    padding: 4rem 2rem;
+    max-width: 45rem;
+  }
 
-	.experience_list {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-items: stretch;
-		justify-content: center;
+  .experience_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
 
-		.list_container {
-			padding: 2rem 0;
+    .list_container {
+      padding: 2rem 0;
 
-			h4 {
-				font-size: 4rem;
-				margin: 0;
-				padding: 0;
-				color: rgb(180, 16, 16);
-			}
+      h4 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+        color: rgb(180, 16, 16);
+      }
 
-			h5 {
-				font-size: 2.5rem;
-				margin: -1rem 0 0 0;
-			}
-		}
-	}
-}
-
-.missionStatement_container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	padding: 6rem 2rem;
-
-	h2,
-	p {
-		flex: 1;
-		max-width: 28rem;
-		min-width: 18rem;
-		width: 100%;
-		margin: 0;
-	}
-
-	h2 {
-		text-align: center;
-		margin: 2rem;
-	}
-
-	p {
-		padding: 1rem;
-		margin: 2rem;
-		box-shadow: 0 6px 0 -3px $blue5, 0 -6px 0 -3px $blue5;
-	}
+      h5 {
+        font-size: 2.5rem;
+        margin: -1rem 0 0 0;
+      }
+    }
+  }
 }

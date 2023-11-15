@@ -1,6 +1,5 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import useWindowDimensions from "../../../hooks/windowSize";
 import HamburgerButton from "./HamburgerButton";
 
 import styles from "./Navigation.module.scss";
@@ -80,9 +79,8 @@ const Navigation: React.FunctionComponent<{
 				>
 					<nav
 						{...otherProps}
-						className={`${styles["navMenu--dynamic"]} ${
-							dynamicMenuClassName || className || ""
-						}`}
+						className={`${styles["navMenu--dynamic"]} ${dynamicMenuClassName || className || ""
+							}`}
 					>
 						{children}
 					</nav>
