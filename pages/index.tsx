@@ -133,6 +133,7 @@ export default function Home() {
           background-size: cover;
           width: 450px;
           height: 450px;
+          z-index: 100;
         }
       `}</style>
     </Page>
