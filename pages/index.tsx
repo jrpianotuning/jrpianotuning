@@ -33,8 +33,8 @@ export default function Home() {
           <div className={styles.our_content}>
             <h2>Our Purpose</h2>
             <p>
-              Unlock your family's potential to create beautiful music through
-              your piano.
+              Unlock your family&apos;s potential to create beautiful music
+              through your piano.
             </p>
             <Link href="/about">Learn&nbsp;more...</Link>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
 
           {/* <Card title="Our Goal">
 						<p>
-							Unlock your family's potential to create beautiful music through your
+							Unlock your family&apos;s potential to create beautiful music through your
 							piano.
 							<br />
 							<br />
