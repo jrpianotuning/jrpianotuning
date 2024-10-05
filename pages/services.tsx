@@ -39,7 +39,7 @@ export default function Services() {
         <ServiceBox
           image="/img/cleaning.jpg"
           title="Cleaning"
-          price="$60"
+          price="$80"
           description="Put the shine back on your piano again."
         >
           <p>
@@ -55,7 +55,7 @@ export default function Services() {
         <ServiceBox
           image="/img/repairs.jpg"
           title="Repairs"
-          price="$120/hr"
+          price="$160/hr"
           description="Help your piano feel just right!"
         >
           <p>
